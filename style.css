@@ -1,0 +1,243 @@
+body{
+    width: 1280px;
+    margin: auto;
+}
+.header{
+    background-color: #F6F9FC;
+    border-left: 2px solid #bfd4e9;
+}
+.header h6{
+    color: #0D6EFD;
+    font-size: 19px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.header h2{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.div1{
+    height: 3px;
+    width: 70px;
+    background-color: #0D6EFD;
+    display: inline-block;
+    margin: 20px 0;
+}
+.header p{
+    font-weight: 400;
+    font-size: 18px;
+    color: #606060;
+}
+.box{
+    background-color: #fff;
+    position: relative;
+    transition: .7s;
+}
+.box:hover{
+    background-color: #0D6EFD;
+    color: #fff;
+}
+.box::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 160px;
+    background-color: #60606064;
+    top: 230px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.box:hover::after{
+    background-color: #fff;
+}
+.box:hover ul li{
+    color: #fff;
+}
+.box-content h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+.box-content h5{
+    color: #fff;
+    margin-bottom: 90px;
+}
+.box-content span{
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.box-content ul{
+    list-style: none;
+    padding-left: 0;
+    display: block;
+}
+.box-content ul li{
+    margin: 15px 0px;
+    color: #606060;
+    transition: .7s;
+}
+.buttton{
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    display: inline-block;
+    background-color: #0D6EFD;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    transition: .5s;
+}
+.buttton::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #0D6EFD;
+    border-radius: 30px;
+    z-index: -1;
+    transition: .5s;
+    opacity: 0;
+}
+.buttton:hover::after{
+    width: 100%;
+    opacity: 1;
+}
+.box:hover .buttton{
+    background-color: #fff;
+    color: #0D6EFD;
+}
+.buttton:hover{
+    color: #fff !important;
+}
+/* Banner Section */
+.banner-section{
+    background: url(./free-bg.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 150px;
+    position: relative;
+    z-index: 1;
+}
+.banner-section::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #0d6dfd9c;
+    z-index: -1;
+}
+.banner-content{
+    position: relative;
+}
+.banner-content::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 50px;
+    background-color: #fff;
+    top: 150px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.banner-content h5{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 23px;
+    font-weight: 600;
+}
+.banner-content h2{
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.banner-content p{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.button{
+    color: #0D6EFD;
+    background-color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 30px;
+    border: none;
+    transition: .5s;
+    border: 2px solid #fff;
+    position: relative;
+    z-index: 1;
+    transition: .5s;
+}
+.button::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #0D6EFD;
+    border-radius: 30px;
+    z-index: -1;
+    transition: .5s;
+    opacity: 0;
+}
+.button:hover::after{
+    width: 100%;
+    opacity: 1;
+}
+.button:hover{
+    background-color: #0D6EFD;
+    color: #fff;
+}
+/* Footer */
+.footer{
+    background-color: #F6F9FC;
+}
+.news{
+    background-color: #0D6EFD;
+    border-radius: 5px;
+}
+.news h3{
+    color: #fff;
+    font-weight: 600;
+}
+.news p{
+    color: #fff;
+    font-weight: 600;
+}
+.form-control{
+    border-radius: 30px;
+    margin-left: -2px;
+}
+button{
+    display: inline-block;
+    margin-left: 20px;
+    border: none;
+    background-color: #0D6EFD;
+    color: #fff;
+    font-weight: 600;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    padding: 6px 20px;
+    margin-top: 104px;
+}
+.right-content{
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 2px 2px 12px #ddd;
+}
